@@ -1,7 +1,60 @@
+@font-face {
+    font-family: Public Sans;
+    src: url(../assets/fonts/Public_Sans/PublicSans-VariableFont_wght.ttf);
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');*/
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 18px !important;
+}
+
+#leave-padding-left {
+    padding-left: 2vw !important;
+}
+#leave-padding-x {
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+}
+#general-div {
+    background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
+}
+
+#request_invite/*.btn*/ {
+    border-radius: 50px !important;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-style: none !important;
+}
+/* #request-invite */ .btn:hover {
+    color: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 50% !important;
+}
+
+#first-cards-icons {
+    width: 75px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#footer {
+    background-color: hsl(233, 26%, 24%);
+    color: white;
+}
+
+.footer-links {
+    color: white;
+    font-weight: 300;
+}
+.footer-links a:hover {
+    text-decoration: none;
 }
