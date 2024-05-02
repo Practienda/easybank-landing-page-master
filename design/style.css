@@ -5,6 +5,16 @@
 
 /*@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');*/
 
+
+/* VARIABLES */
+
+:root {
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+}
+
+
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -16,6 +26,7 @@
 body {
     font-family: 'Public Sans', sans-serif !important;
     font-size: 18px !important;
+    
 }
 
 #leave-padding-left {
@@ -26,16 +37,28 @@ body {
     padding-right: 2vw !important;
 }
 #general-div {
-    background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
+    background: linear-gradient(to bottom, white, hsl(0, 0%, 98%));
+}
+/*.card-img-top {
+    height: 200px;
+    overflow-y: clip !important;
+    object-fit: cover !important;
+}*/
+.card-text, .card-subtitle {
+    color: hsl(233, 8%, 62%);
+}
+.card-subtitle {
+    font-size: smaller;
+    font-weight: 300;
 }
 
 #request_invite/*.btn*/ {
     border-radius: 50px !important;
-    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
     border-style: none !important;
 }
 /* #request-invite */ .btn:hover {
-    color: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
     background-color: rgba(255, 255, 255, 0.5) !important;
     opacity: 50% !important;
 }
@@ -46,15 +69,32 @@ body {
     margin-top: 30px;
 }
 
+.article-link {
+    text-decoration: none !important;
+    color: black;
+}
+.article-link:hover {
+    /*text-decoration: none !important;*/
+    color: var(--lime-green);
+}
+
 #footer {
     background-color: hsl(233, 26%, 24%);
     color: white;
 }
 
+.social-media-icons path {
+    transition: fill 0.3s;
+}
+.social-media-icons path:hover {
+    fill: var(--lime-green) !important;
+}
+
 .footer-links {
     color: white;
+    text-decoration: none !important;
     font-weight: 300;
 }
-.footer-links a:hover {
-    text-decoration: none;
+.footer-links:hover {
+    color: var(--lime-green);
 }
