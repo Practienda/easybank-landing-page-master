@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Easybank landing page</title>
 
   <link rel="stylesheet" href="./design/style.css">
   <!-- Bootstrap -->
   <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Font family link: -->
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
@@ -19,6 +22,7 @@
   <!-- <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
 
 </head>
+
 <body>
 
   <!-- Navigation bar -->
@@ -28,7 +32,8 @@
         <img src="./images/logo.svg" alt="easybank logo.">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -63,27 +68,41 @@
     </div>
   </nav>
 
-  
-  
+
+
   <!-- Top div with big image to the right -->
 
 
   <div class="p-5" id="general-div">
+    <div id="img-fondo" class="col-7 d-md-none">
+      <!--<img src="./images/bg-intro-desktop.svg">-->
+    </div>
+    <div class="card d-md-none"> <!-- border-0 -->
+      <div class="card-body">
+        <h1 class="card-title">Next generation digital banking</h1>
+        <p class="card-text">
+          Take your financial life online. Your Easybank account will be a one-stop-shop
+          for spending, saving, budgeting, investing, and much more.
+        </p>
+        <button class="btn btn-primary" id="request_invite">Request Invite</button>
+      </div>
+    </div>
+
     <div class="row align-items-center"> <!-- style="padding-left: 2vw !important;" -->
-      <div class="col-5">
-        <div class="card">
+      <div class="col-5 d-none d-md-block">
+        <div class="card"> <!-- border-0 -->
           <div class="card-body">
             <h1 class="card-title">Next generation digital banking</h1>
             <p class="card-text">
-              Take your financial life online. Your Easybank account will be a one-stop-shop 
+              Take your financial life online. Your Easybank account will be a one-stop-shop
               for spending, saving, budgeting, investing, and much more.
             </p>
             <button class="btn btn-primary" id="request_invite">Request Invite</button>
           </div>
         </div>
       </div>
-      <div class="col-7">
-        <img src="./images/bg-intro-desktop.svg">
+      <div id="img-fondo" class="col-7 d-none d-md-block">
+        <!--<img src="./images/bg-intro-desktop.svg">-->
       </div>
     </div>
   </div>
@@ -94,64 +113,60 @@
   <div class="p-5" id="general-div">
 
     <h2>Why choose Easybank?</h2>
-    
+
     <p>
-      We leverage Open Banking to turn your bank account into your financial hub. Control 
+      We leverage Open Banking to turn your bank account into your financial hub. Control
       your finances like never before.
     </p>
-    
+
     <div class="row">
       <div class="col-sm-3">
-        <div class="card">
-          <img class="card-img-top" id="first-cards-icons"
-               src="./images/icon-online.svg"
-               alt="online banking icon: hand holding bank cards.">
+        <div class="card border-0">
+          <img class="card-img-top" id="first-cards-icons" src="./images/icon-online.svg"
+            alt="online banking icon: hand holding bank cards.">
           <div class="card-body">
             <h5 class="card-title">Online Banking</h5>
             <p class="card-text">
-              Our modern web and mobile applications allow you to keep track of your finances 
+              Our modern web and mobile applications allow you to keep track of your finances
               wherever you are in the world.
             </p>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
-        <div class="card">
-          <img class="card-img-top" id="first-cards-icons"
-               src="./images/icon-budgeting.svg"
-               alt="budgeting icon: phone with dollar sign icon pop-up.">
+        <div class="card border-0">
+          <img class="card-img-top" id="first-cards-icons" src="./images/icon-budgeting.svg"
+            alt="budgeting icon: phone with dollar sign icon pop-up.">
           <div class="card-body">
             <h5 class="card-title">Simple Budgeting</h5>
             <p class="card-text">
-              See exactly where your money goes each month. Receive notifications when you're 
+              See exactly where your money goes each month. Receive notifications when you're
               close to hitting your limits.
             </p>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
-        <div class="card">
-          <img class="card-img-top" id="first-cards-icons"
-               src="./images/icon-onboarding.svg"
-               alt="onboarding icon: simplified shape people.">
+        <div class="card border-0">
+          <img class="card-img-top" id="first-cards-icons" src="./images/icon-onboarding.svg"
+            alt="onboarding icon: simplified shape people.">
           <div class="card-body">
             <h5 class="card-title">Fast Onboarding</h5>
             <p class="card-text">
-              We don't do branches. Open your account in minutes online and start taking control 
+              We don't do branches. Open your account in minutes online and start taking control
               of your finances right away.
             </p>
           </div>
         </div>
       </div>
       <div class="col-sm-3">
-        <div class="card">
-          <img class="card-img-top" id="first-cards-icons"
-               src="./images/icon-api.svg"
-               alt="API icon: circuit-like icon.">
+        <div class="card border-0">
+          <img class="card-img-top" id="first-cards-icons" src="./images/icon-api.svg"
+            alt="API icon: circuit-like icon.">
           <div class="card-body">
             <h5 class="card-title">Open API</h5>
             <p class="card-text">
-              Manage your savings, investments, pension, and much more from one account. Tracking 
+              Manage your savings, investments, pension, and much more from one account. Tracking
               your money has never been easier.
             </p>
           </div>
@@ -160,79 +175,89 @@
     </div>
 
   </div>
-      
-      
-  
+
+
+
   <!-- 2nd row of cards -->
-  <div class="p-5" id="general-div">
+  <div class="p-5" id="general-div"> <!-- class="p-5" -->
     <h2>Latest Articles</h2>
-    
-    <div class="row">
-      <div class="col-sm-3">
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-6 col-md-3">
         <div class="card">
-          <img class="card-img-top" id="bottom-card-imgs"
-              src="./images/image-currency.jpg"
-              alt="piled up paper money.">
+          <div id="bottom-card-imgs">
+            <img class="card-img-top" src="./images/image-currency.jpg" alt="piled up paper money.">
+          </div>
           <div class="card-body">
             <h6 class="card-subtitle">By Claire Robinson</h6>
             <a href="#" class="article-link">
               <h5 class="card-title">Receive money in any currency with no fees</h5>
             </a>
-            <p class="card-text">
-              The world is getting smaller and we're becoming more mobile. So why should you be 
-              forced to only receive money in a single …
-            </p>
+            <div class="descripcion">
+              <p class="card-text">
+                The world is getting smaller and we're becoming more mobile. So why should you be
+                forced to only receive money in a single …
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-md-3">
         <div class="card">
-          <img class="card-img-top" id="bottom-card-imgs"
-              src="./images/image-restaurant.jpg"
+          <div id="bottom-card-imgs">
+            <img class="card-img-top" src="./images/image-restaurant.jpg"
               alt="restaurant-- focus on table, fancy food serving, long table and several people eating. Several water glasses, etc...">
+          </div>
           <div class="card-body">
             <h6 class="card-subtitle">By Wilson Hutton</h6>
             <a href="#" class="article-link">
               <h5 class="card-title">Treat yourself without worrying about money</h5>
             </a>
-            <p class="card-text">
-              Our simple budgeting feature allows you to separate out your spending and set 
-              realistic limits each month. That means you …
-            </p>
+            <div class="descripcion">
+              <p class="card-text">
+                Our simple budgeting feature allows you to separate out your spending and set
+                realistic limits each month. That means you …
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-md-3">
         <div class="card">
-          <img class="card-img-top" id="bottom-card-imgs"
-              src="./images/image-plane.jpg"
-              alt="piled up paper money.">
+          <div id="bottom-card-imgs">
+            <img class="card-img-top" src="./images/image-plane.jpg" alt="piled up paper money.">
+          </div>
           <div class="card-body">
             <h6 class="card-subtitle">By Wilson Hutton</h6>
             <a href="#" class="article-link">
               <h5 class="card-title">Take your Easybank card wherever you go</h5>
             </a>
-            <p class="card-text">
-              We want you to enjoy your travels. This is why we don't charge any fees on purchases 
-              while you're abroad. We'll even show you …
-            </p>
+            <div class="descripcion">
+              <p class="card-text">
+                We want you to enjoy your travels. This is why we don't charge any fees on purchases
+                while you're abroad. We'll even show you …
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-md-3">
         <div class="card">
-          <img class="card-img-top" id="bottom-card-imgs"
-              src="./images/image-confetti.jpg"
-              alt="piled up paper money.">
+          <div id="bottom-card-imgs">
+            <img class="card-img-top" src="./images/image-confetti.jpg" alt="piled up paper money.">
+          </div>
+
           <div class="card-body">
             <h6 class="card-subtitle">By Claire Robinson</h6>
             <a href="#" class="article-link">
               <h5 class="card-title">Our invite-only Beta accounts are now live!</h5>
             </a>
-            <p class="card-text">
-              After a lot of hard work by the whole team, we're excited to launch our closed beta. 
-              It's easy to request an invite through the site …
-            </p>
+            <div class="descripcion">
+              <p class="card-text">
+                After a lot of hard work by the whole team, we're excited to launch our closed beta.
+                It's easy to request an invite through the site …
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -250,31 +275,31 @@
           <img src="./images/logo-footer.svg">
         </div>
         <div class="col">
-          <a href="#"  class="social-media-icons">
+          <a href="#" class="social-media-icons">
             <img src="./images/icon-facebook.svg">
           </a>
 
-          <a href="#"  class="social-media-icons">
+          <a href="#" class="social-media-icons">
             <img src="./images/icon-youtube.svg">
           </a>
 
-          <a href="#"  class="social-media-icons">
+          <a href="#" class="social-media-icons">
             <img src="./images/icon-twitter.svg">
           </a>
 
-          <a href="#"  class="social-media-icons">
+          <a href="#" class="social-media-icons">
             <img src="./images/icon-pinterest.svg">
           </a>
 
-          <a href="#"  class="social-media-icons">
+          <a href="#" class="social-media-icons">
             <img src="./images/icon-instagram.svg">
           </a>
         </div>
       </div>
     </div>
-  
-    <div class="col-sm-3">
-      <ul>
+
+    <div class="col-sm-3 d-flex">
+      <ul class="footer-lista">
         <li>
           <a href="#" class="footer-links">About Us</a>
         </li>
@@ -284,6 +309,8 @@
         <li>
           <a href="#" class="footer-links">Blog</a>
         </li>
+      </ul>
+      <ul class="footer-lista">
         <li>
           <a href="#" class="footer-links">Careers</a>
         </li>
@@ -293,7 +320,7 @@
         <li>
           <a href="#" class="footer-links">Privacy Policy</a>
         </li>
-      </ul>      
+      </ul>
     </div>
 
     <div class="col-sm-6 justify-content-end">
@@ -310,10 +337,9 @@
 
   <!-- Script for the collapsed navbar -->
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

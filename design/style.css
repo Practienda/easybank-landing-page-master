@@ -26,16 +26,15 @@
 body {
     font-family: 'Public Sans', sans-serif !important;
     font-size: 18px !important;
-    
 }
 
-#leave-padding-left {
+/*#leave-padding-left {
     padding-left: 2vw !important;
 }
 #leave-padding-x {
     padding-left: 2vw !important;
     padding-right: 2vw !important;
-}
+}*/
 #general-div {
     background: linear-gradient(to bottom, white, hsl(0, 0%, 98%));
 }
@@ -83,11 +82,12 @@ body {
     color: white;
 }
 
-.social-media-icons path {
-    transition: fill 0.3s;
+.social-media-icons img {
+    transition: fill 0.3s !important;
 }
-.social-media-icons path:hover {
-    fill: var(--lime-green) !important;
+.social-media-icons img:hover {
+    filter: invert(64%) sepia(61%) saturate(550%) hue-rotate(83deg) brightness(180%) contrast(89%);
+    /* fill: var(--lime-green) !important; */
 }
 
 .footer-links {
@@ -98,3 +98,45 @@ body {
 .footer-links:hover {
     color: var(--lime-green);
 }
+
+
+.descripcion {
+    height: 110px;
+}
+
+#bottom-card-imgs {
+    overflow: hidden;
+    height: 250px;
+}
+
+.card {
+    background: transparent !important;
+}
+
+.footer-lista {
+    list-style: none;
+}
+
+#img-fondo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1000px) {
+    #bottom-card-imgs {
+        /*overflow: hidden;*/
+        height: 400px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .descripcion {
+        height: 250px;
+    }
+}
+
+
